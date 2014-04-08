@@ -63,17 +63,23 @@ class Field:
 
 	def printField(self):
 		i = 1
+
 		print("\n\t", end="")
 		for char in range(0,self.width):
 			print(chr(char+65) + " ", end="")
 		print("\n")
+
 		for list in self.field:
 			print(str(i) + "\t", end = '')
 			for item in list:
 				print(item.printCell() + " ", end='')
-			print()
+			print("\t" + str(i))
 			i += 1
-		return
+
+		print("\n\t", end="")
+		for char in range(0,self.width):
+			print(chr(char+65) + " ", end="")
+		print("\n")
 
 	def cleared(self):
 		safe = 0
