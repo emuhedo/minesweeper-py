@@ -1,4 +1,4 @@
 minesweeper-py
 ==============
 
-A command line minesweeper game written in python. 
+A commandline minesweeper game I made, because I was bored. 
